@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Lovers</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('/public/background.jpg');
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            text-decoration: double;
+            color: #fff;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            text-align: center;
+            padding: 100px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar-search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-control {
+            flex: 1;
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .container-italic-quote {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        .container-italic-quote h3 {
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .container-text-on-cats {
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            font-weight: 500;
+            font-size: large;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">CatLovers</a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="navbar-search-form">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-primary">Search</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Cat Lovers</h1>
+        <div class="container-italic-quote">
+            <p><i>"When a man loves cats, I am his friend and comrade without further introduction."</i></p>
+            <h3>Mark Twain</h3>
+        </div>
+        <div class="container-text-on-cats">
+            <p>Cats, these mysterious and graceful creatures, have long captured our hearts with their enigmatic charm
+                and playful antics. They epitomize the essence of independence and curiosity, making them beloved
+                companions
+                for millions around the world. These words resonate deeply, for cats have a unique way of forging deep
+                connections with those who appreciate their companionship. Whether they're gracefully prowling through
+                the garden or curling up for a cozy nap, cats add a special warmth to our homes and hearts. Discover the
+                world of feline wonder on our website and let these enchanting beings brighten your day.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cat Lovers</p>
+    </footer>
+</body>
+
+</html>
