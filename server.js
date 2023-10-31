@@ -10,9 +10,33 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'home.html'));
 });
 
+app.get('/cats', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'cats.html'));
+});
+
 // Define a route for the contact us page
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'contact.html'));
+});
+
+// Define the route for the gallery page
+app.get('/gallery', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'gallery.html'));
+});
+
+// Define the route for the persian cats page
+app.get('/persian', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'persian.html'));
+});
+
+// Define the route for the british short hair cat
+app.get('/british', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'british.html'));
+});
+
+// Define the route for ragdoll cat
+app.get('/ragdoll', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'ragdoll.html'));
 });
 
 app.listen(port, () => {
