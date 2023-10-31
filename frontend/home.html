@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Lovers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Reset some default browser styles */
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +15,7 @@
 
         body::before {
             content: "";
-            background-image: url('/public/background.jpg');
+
             position: fixed;
             top: 0;
             left: 0;
@@ -49,6 +49,7 @@
             font-size: 24px;
             text-decoration: double;
             color: #fff;
+            text-align: left;
         }
 
         .nav {
@@ -72,13 +73,14 @@
         }
 
         footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             width: 100%;
             background-color: #000000;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 0 20px;
+            z-index: 999;
         }
 
         .navbar-search-form {
@@ -102,6 +104,7 @@
             border-radius: 5px;
             padding: 10px 20px;
             cursor: pointer;
+            margin-left: 20px;
         }
 
         .btn:hover {
@@ -131,29 +134,41 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
+        <div class="container">
+            <nav class="navbar">
                 <a class="navbar-brand" href="/">CatLovers</a>
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cats</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/cats" id="catsDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cats
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="catsDropdown">
+                            <a class="dropdown-item" href="/persian">Persian Cats </a>
+                            <a class="dropdown-item" href="/british">British Short Hair</a>
+                            <a class="dropdown-item" href="ragdoll">Ragdoll</a>
+                            <a class="dropdown-item" href="/scottish">Scottish Fold</a>
+                            <a class="dropdown-item" href="/chartreux">Chartreux</a>
+                            <a class="dropdown-item" href="/britishlong">British Long Hair</a>
+                        </div>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="/gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
-            </div>
-            <form class="navbar-search-form">
-                <input type="text" class="form-control" placeholder="Search">
-                <button class="btn btn-primary">Search</button>
-            </form>
-        </nav>
+                <form class="navbar-search-form d-flex">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary" style="margin-left: 20px;">Search</button>
+                </form>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Welcome to Cat Lovers</h1>
@@ -176,5 +191,8 @@
         <p>&copy; 2023 Cat Lovers</p>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 </html>
