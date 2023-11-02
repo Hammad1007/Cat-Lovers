@@ -39,6 +39,21 @@ app.get('/ragdoll', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'ragdoll.html'));
 });
 
+// Define the route for the persian cats page
+app.get('/scottish', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'scottish.html'));
+});
+
+// Define the route for the british short hair cat
+app.get('/chartreux', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'chartreux.html'));
+});
+
+// Define the route for ragdoll cat
+app.get('/britishlong', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'britishlong.html'));
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
