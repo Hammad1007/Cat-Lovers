@@ -1,9 +1,14 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'frontend')));
+
+// --------------------------------------------------------------------------------
+
+// Navbar links
 
 // Define a route for the homepage
 app.get('/', (req, res) => {
@@ -23,6 +28,10 @@ app.get('/contact', (req, res) => {
 app.get('/gallery', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'gallery.html'));
 });
+
+// --------------------------------------------------------------------------------
+
+// Pages to go to a particular cat page
 
 // Define the route for the persian cats page
 app.get('/persian', (req, res) => {
@@ -54,6 +63,9 @@ app.get('/britishlong', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'britishlong.html'));
 });
 
+// ------------------------------------------------------------------------
+
+// Listening port at 3000
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
