@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persian Cat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container-ragdollcat {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 100px auto;
+            /* Add top margin to push content down */
+            position: relative;
+            z-index: 1;
+            /* Ensure the content appears above the footer */
+        }
+
+        .text-section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            /* Center align the text content */
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Set the same background color as container-ragdollcat for consistency */
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1px 0;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a class="navbar-brand" href="/">CatLovers</a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/cats" id="catsDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cats
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="catsDropdown">
+                            <a class="dropdown-item" href="/persian.html">Persian Cats</a>
+                            <a class="dropdown-item" href="/british.html">British Short Hair</a>
+                            <a class="dropdown-item" href="ragdoll.html">Ragdoll</a>
+                            <a class="dropdown-item" href="/scottish.html">Scottish Fold</a>
+                            <a class="dropdown-item" href="/chartreux.html">Chartreux</a>
+                            <a class="dropdown-item" href="/britishlong.html">British Long Hair</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cats">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="navbar-search-form d-flex">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary" style="margin-left: 20px;">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-ragdollcat">
+        <h1>Ragdoll Cats</h1>
+        <div class="text-section">
+            <h2>About Ragdoll Cats</h2>
+            <p>
+                Ragdoll cats are renowned for their striking blue eyes and semi-long, silky fur, which contributes to
+                their captivating and regal appearance. These felines are well-known for their gentle and laid-back
+                temperament, making them perfect indoor companions. Ragdoll cats are characterized by their bright blue,
+                almond-shaped eyes and charming expressions. They have an affectionate and serene nature, often enjoying
+                lounging in cozy corners of the house. Despite their calm demeanor, Ragdoll cats are friendly and enjoy
+                human companionship, making them cherished pets worldwide.
+            </p>
+
+            <h2>Physical Characteristics</h2>
+            <p>
+                Ragdoll cats have a distinctive appearance with a sturdy body, soft semi-long fur, and various coat
+                colors and patterns. Their striking blue eyes and charming expressions add to their allure. These cats
+                have medium-sized legs and a bushy tail, enhancing their overall graceful appearance.
+            </p>
+
+            <h2>Personality</h2>
+            <p>Ragdoll cats are famous for their docile and affectionate personalities. They are gentle giants, known
+                for their tendency to go limp when picked up, hence the name "Ragdoll." They are sociable, love human
+                company, and often form strong bonds with their owners. Ragdolls are playful and enjoy interactive
+                playtime but are also content to snuggle and relax. They are well-suited for families and individuals
+                alike.</p>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2023 Cat Lovers</p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</html>
