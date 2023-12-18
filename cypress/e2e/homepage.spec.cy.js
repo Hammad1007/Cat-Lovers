@@ -40,4 +40,5 @@ describe('Cat-Lovers Home Page', () => {
     cy.url()
     .should('eq', 'http://localhost:3000/');
   })
+
 })
