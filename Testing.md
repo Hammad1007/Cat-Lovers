@@ -15,10 +15,25 @@ Cypress has everything a Software Tester wishes for: An impressive GUI, ease of 
 #### Setup and important commands
 
 Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. After you have successfully cloned a git repository with yourself run the following command.
-```npm install```
+```
+npm install
+```
 
 This command is used for all the node related projects. Running this command successfully installs all the node modules and packages inside the project. After this command, run the following command to run your application on your localhost.
-```npm start```
+```
+npm start
+```
 
 Open a separate terminal and run the following command:
-```npm install cypress --save-dev```
+```
+npm install cypress --save-dev
+```
+
+This command will install all the cypress related modules and dependencies in the project. 
+
+After this command, you need to start the cypress tool. This will open the cypress GUI for you. Once the GUI is opened, you will follow the instrucions on your browser and choose the options which best suit you. The command to start cypress is:
+```
+npx cypress open
+```
+
+Great, now we are ready to begin with our E2E Testing.
