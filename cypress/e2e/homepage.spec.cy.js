@@ -54,7 +54,7 @@ describe('Cat-Lovers Project', () => {
       .should('be.visible')
       .click()
       cy.url()
-      .should('eq', 'http://localhost:3000/information');
+      .should('eq', 'http://localhost:3000/cats');
     })
   
     it('Contact when clicked takes me to the conatct us form page', () => {
@@ -253,6 +253,10 @@ describe('Cat-Lovers Project', () => {
       
     })
 
+    it('Background color is white', () => {
+      cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
+    })
+
     it('Gallery word is visible', () => {
       cy.get('main h1').should('be.visible')
     })
@@ -277,6 +281,43 @@ describe('Cat-Lovers Project', () => {
       .should('have.length', 7) 
       .each(($img) => {
         cy.wrap($img).should('be.visible'); 
+      });
+    })
+  })
+
+  context('Information', () => {
+
+    beforeEach(() => {
+      cy.visit('http://localhost:3000/cats')
+    })
+
+    it('Opens the information page', () => {
+      
+    })
+
+    it('Background color is white', () => {
+      cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
+    })
+
+    it('Screen is visible', () => {
+      cy.get('body').should('be.visible')
+    })
+
+    it('Hottest Pick text is visible', () => {
+      cy.get('.container h1').should('be.visible')
+    })
+
+    it('Hottest Picks text is correct', () => {
+      cy.get('.container h1').should('have.text', 'Hottest Picks!')
+    })
+
+    it('There are 2 rows on the page', () => {
+      cy.get('.container .row').should('have.length', 2).should('be.visible')
+    })
+
+    it('There are 6 cards on the page', () => {
+      cy.get('.container .card').should('have.length', 6).each(($img) => {
+        cy.wrap($img).should('be.visible')
       });
     })
   })
