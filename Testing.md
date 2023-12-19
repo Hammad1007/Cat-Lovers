@@ -43,6 +43,11 @@ Great, now we are ready to begin with our E2E Testing.
 There is a big list of commands and keywords which are currently being used in cypress. You can have a look at them on the following website: https://www.cypress.io/
 However, I will be mentioning a few basic and most commonly used commands in cypress for you all to get started.
 
+**Cypress Keywords**
+* describe(): define a test suite or a group of tests
+* it(): defines an individual test case or a specification
+* context(): group and organize test commands within a specific context or scope
+
 **Cypress Commands**
 
 * cy.visit(): Navigate to a specific URL.
@@ -55,8 +60,3 @@ However, I will be mentioning a few basic and most commonly used commands in cyp
 * cy.each(): iterate over a set of elements returned by a command, allowing you to perform actions or assertions on each element individually
 * cy.wrap(): wrap an element or value to perform further Cypress commands or assertions
 * cy.type(): takes in a typed tex in a text field
-
-
-
-
-
