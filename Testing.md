@@ -43,3 +43,20 @@ Great, now we are ready to begin with our E2E Testing.
 There is a big list of commands and keywords which are currently being used in cypress. You can have a look at them on the following website: https://www.cypress.io/
 However, I will be mentioning a few basic and most commonly used commands in cypress for you all to get started.
 
+**Cypress Commands**
+
+* cy.visit(): Navigate to a specific URL.
+* cy.get(): Retrieves DOM elements using selectors like IDs, classes, etc.
+* cy.contains(): Looks for DOM elements with specific text content.
+* cy.click(): Triggers a click event on a DOM element.
+* cy.type(): Types into an input field or any focusable element.
+* cy.should(): Adds assertions to ensure an element has specific properties.
+* cy.wait(): Pauses the test to wait for a specific condition or duration.
+* cy.each(): iterate over a set of elements returned by a command, allowing you to perform actions or assertions on each element individually
+* cy.wrap(): wrap an element or value to perform further Cypress commands or assertions
+* cy.type(): takes in a typed tex in a text field
+
+
+
+
+
