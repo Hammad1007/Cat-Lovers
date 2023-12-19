@@ -302,6 +302,24 @@ describe('Cat-Lovers Project', () => {
     it('Screen is visible', () => {
       cy.get('body').should('be.visible')
     })
+
+    it('Hottest Pick text is visible', () => {
+      cy.get('.container h1').should('be.visible')
+    })
+
+    it('Hottest Picks text is correct', () => {
+      cy.get('.container h1').should('have.text', 'Hottest Picks!')
+    })
+
+    it('There are 2 rows on the page', () => {
+      cy.get('.container .row').should('have.length', 2).should('be.visible')
+    })
+
+    it('There are 6 cards on the page', () => {
+      cy.get('.container .card').should('have.length', 6).each(($img) => {
+        cy.wrap($img).should('be.visible')
+      });
+    })
   })
  
 })
