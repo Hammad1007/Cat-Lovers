@@ -42,7 +42,7 @@ Great, now we are ready to begin with our E2E Testing.
 
 There is a big list of commands and keywords which are currently being used in cypress. You can have a look at them on the following website: https://www.cypress.io/
 
-However, I will be mentioning a few basic and most commonly used commands in cypress for you all to get started.
+However, I will be mentioning a few basic and most commonly used commands and keywords in cypress for you all to get started.
 
 **Cypress Keywords**
 
