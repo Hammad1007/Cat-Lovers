@@ -1,4 +1,4 @@
-describe('Cat-Lovers Home Page', () => {
+describe('Cat-Lovers Project', () => {
 
   beforeEach(() => {
     cy.visit('http://localhost:3000')
@@ -17,7 +17,7 @@ describe('Cat-Lovers Home Page', () => {
     it('Screen is visible', () => {
       cy.get('body').should('be.visible')
     })
-  
+
     it('Navbar is visible', () => {
       cy.get('nav').should('be.visible')
     })
@@ -47,6 +47,14 @@ describe('Cat-Lovers Home Page', () => {
       .click()
       cy.url()
       .should('eq', 'http://localhost:3000/gallery');
+    })
+
+    it('Information when clicked takes me to a page where cat information is available', () => {
+      cy.contains('.nav-item', 'Information')
+      .should('be.visible')
+      .click()
+      cy.url()
+      .should('eq', 'http://localhost:3000/information');
     })
   
     it('Contact when clicked takes me to the conatct us form page', () => {
@@ -142,6 +150,11 @@ describe('Cat-Lovers Home Page', () => {
     })
 
     context('Contact Form', () => {
+
+      it('Background color is white', () => {
+        cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
+      })
+
       it('Contact Form is visible', () => {
         cy.get('main .form-container').should('be.visible')
       })
@@ -209,10 +222,51 @@ describe('Cat-Lovers Home Page', () => {
         cy.get('.contact-form .btn').should('be.visible')
       })
 
-      it('Submit button has the text Submit in it and it is visible', () => {
-        
+      it('Submit button is colored blue', () => {
+        cy.get('.contact-form .btn').should('be.visible').should('have.css', 'background-color', 'rgb(0, 123, 255)')
       })
 
+      it('Submit button has the text Submit in it and it is visible', () => {
+        cy.get('.contact-form .btn').should('be.visible').should('have.text', 'Submit')
+      })
+
+    })
+
+    context('Footer', () => {
+      it('Footer is visible', () => {
+        cy.get('footer').should('be.visible')
+      })
+
+      it('Footer text is visible', () => {
+        cy.get('footer p').should('be.visible')
+      })
+
+    })
+  })
+
+  context('Gallery Page', () => {
+    beforeEach(() => {
+      cy.visit('http://localhost:3000/gallery')
+    })
+
+    it('Opens the gallery page', () => {
+      
+    })
+
+    it('Gallery word is visible', () => {
+      cy.get('main h1').should('be.visible')
+    })
+
+    it('Gallery word is correct', () => {
+      cy.get('main h1').should('have.text', 'Gallery')
+    })
+
+    it('There are images on the page', () => {
+      cy.get('.container .row').should('be.visible')
+    })
+
+    it('Count the images on the screen', () => {
+      
     })
   })
  
