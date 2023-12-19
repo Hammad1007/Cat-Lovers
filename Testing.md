@@ -37,3 +37,9 @@ npx cypress open
 ```
 
 Great, now we are ready to begin with our E2E Testing.
+
+#### Important keywords in Cypress
+
+There is a big list of commands and keywords which are currently being used in cypress. You can have a look at them on the following website: cypress.io
+However, I will be mentioning a few basic and most commonly used commands in cypress for you all to get started.
+
