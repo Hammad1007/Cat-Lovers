@@ -371,5 +371,64 @@ describe('Cat-Lovers Project', () => {
       })
     })
   })
+
+  context('Cats', () => {
+    it('Cats when clicked displays a dropdown', () => {
+      cy.get('.nav-link.dropdown-toggle').click()
+      cy.get('.dropdown-menu').should('be.visible')
+    })
+
+    it('Cats when clicked displays the correct content in the dropdown', () => {
+      cy.get('.nav-link.dropdown-toggle').click() 
+
+      cy.get('.dropdown-menu').should('be.visible') 
+    
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'Persian Cats').should('be.visible')
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'British Short Hair').should('be.visible')
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'Ragdoll').should('be.visible')
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'Scottish Fold').should('be.visible')
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'Chartreux').should('be.visible')
+      cy.get('.dropdown-menu').contains('.dropdown-item', 'British Long Hair').should('be.visible')
+    })
+
+    context('Dropdown', () => {
+      beforeEach(() => {
+        cy.get('.nav-link.dropdown-toggle').click() 
+        cy.get('.dropdown-menu').should('be.visible')
+      })
+
+      it('Persian Cats', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'Persian Cats').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/persian')
+      })
+
+      it('British Short Hair', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'British Short Hair').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/british')
+      })
+
+      it('Ragdoll', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'Ragdoll').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/ragdoll')
+      })
+
+      it('Scottish Fold', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'Scottish Fold').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/scottish')
+      })
+
+      it('Chartreux', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'Chartreux').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/chartreux')
+      })
+
+      it('British Long Hair', () => {
+        cy.get('.dropdown-menu').contains('.dropdown-item', 'British Long Hair').should('be.visible').click()
+        cy.url().should('eq', 'http://localhost:3000/britishlong')
+      })
+
+    })
+
+  })
  
 })
