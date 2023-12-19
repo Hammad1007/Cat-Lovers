@@ -270,7 +270,7 @@ describe('Cat-Lovers Project', () => {
     })
 
     it('Count images on the screen', () => {
-      cy.wait(2000)   // load  the page completely
+      // cy.wait(2000)   // load  the page completely
       cy.get('.container .card').should('have.length', 21).each(($img) => {
         cy.wrap($img).should('be.visible')
       });
@@ -319,6 +319,56 @@ describe('Cat-Lovers Project', () => {
       cy.get('.container .card').should('have.length', 6).each(($img) => {
         cy.wrap($img).should('be.visible')
       });
+    })
+
+    context('Cards', () => {
+      it('Persian Cats', () => {
+        cy.get('.row .col-md-4.mb-4').first().within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'Persian Cats');
+          cy.get('.btn-primary').click();
+        });
+      })
+
+      it('British Short Hair', () => {
+        cy.get('.row .col-md-4.mb-4').eq(1).within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'British Short Hair');
+          cy.get('.btn-primary').click();
+        });
+      })
+
+      it('Ragdoll', () => {
+        cy.get('.row .col-md-4.mb-4').eq(2).within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'Ragdoll');
+          cy.get('.btn-primary').click();
+        });
+      })
+
+      it('Scottish Fold', () => {
+        cy.get('.row .col-md-4.mb-4').eq(3).within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'Scottish Fold');
+          cy.get('.btn-primary').click();
+        });
+      })
+
+      it('Chartreux', () => {
+        cy.get('.row .col-md-4.mb-4').eq(4).within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'Chartreux');
+          cy.get('.btn-primary').click();
+        });
+      })
+
+      it('British Long Hair', () => {
+        cy.get('.row .col-md-4.mb-4').eq(5).within(() => {
+          cy.get('img').should('be.visible')
+          cy.get('.card-title').should('contain', 'British Long Hair');
+          cy.get('.btn-primary').click();
+        });
+      })
     })
   })
  
