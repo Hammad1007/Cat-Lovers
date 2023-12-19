@@ -37,3 +37,5 @@ npx cypress open
 ```
 
 Great, now we are ready to begin with our E2E Testing.
+
+#### Important keywords in Cypress
