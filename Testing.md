@@ -44,6 +44,7 @@ There is a big list of commands and keywords which are currently being used in c
 However, I will be mentioning a few basic and most commonly used commands in cypress for you all to get started.
 
 **Cypress Keywords**
+
 * describe(): define a test suite or a group of tests
 * it(): defines an individual test case or a specification
 * context(): group and organize test commands within a specific context or scope
