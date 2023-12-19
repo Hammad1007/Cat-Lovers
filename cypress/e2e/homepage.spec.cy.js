@@ -265,8 +265,19 @@ describe('Cat-Lovers Project', () => {
       cy.get('.container .row').should('be.visible')
     })
 
-    it('Count the images on the screen', () => {
-      
+    it('Count images on the screen', () => {
+      cy.wait(2000)   // load  the page completely
+      cy.get('.container .card').should('have.length', 21).each(($img) => {
+        cy.wrap($img).should('be.visible')
+      });
+    })
+
+    it('Count the image rows on the screen', () => {
+      cy.get('.container .row') 
+      .should('have.length', 7) 
+      .each(($img) => {
+        cy.wrap($img).should('be.visible'); 
+      });
     })
   })
  
