@@ -36,11 +36,11 @@ After this command, you need to start the cypress tool. This will open the cypre
 npx cypress open
 ```
 
-Great, now we are ready to begin with our E2E Testing.
+Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder cypress which has been installed freshly after running the above commands. In your folder, go to the subfolder e2e and inside this folder, create a new 'cy.js' file to start writing your E2E tests for your website. You can refer to the file which I have created for any issues.
 
 #### Important keywords in Cypress
 
-There is a big list of commands and keywords which are currently being used in cypress. You can have a look at them on the following website: https://www.cypress.io/
+There are a variety of commands and keywords which are used in cypress. You can have a look at them here: [Cypress Commands](https://docs.cypress.io/api/table-of-contents)
 
 However, I will be mentioning a few basic and most commonly used commands and keywords in cypress for you all to get started.
 
