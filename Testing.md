@@ -47,6 +47,9 @@ However, I will be mentioning a few basic and most commonly used commands and ke
 **Cypress Keywords**
 
 * describe(): define a test suite or a group of tests
+* before(): runs once before all the tests in a test file
+    1. beforeEach(): runs before each individual test case within a test file
+    2. beforeAll(): runs once before all the tests in the entire test suite
 * it(): defines an individual test case or a specification
 * context(): group and organize test commands within a specific context or scope
 
