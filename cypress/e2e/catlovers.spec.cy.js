@@ -2,7 +2,6 @@ describe('Cat-Lovers Project', () => {
 
   beforeEach(() => {
     cy.visit('http://localhost:3000')
-
   })
 
   context('Home Page', () => {
@@ -27,42 +26,28 @@ describe('Cat-Lovers Project', () => {
     })
   
     it('CatLovers when clicked redirects me to the same page', () => {
-      cy.contains('.navbar-brand', 'CatLovers')
-      .should('be.visible')
-      .click()
+      cy.contains('.navbar-brand', 'CatLovers').should('be.visible').click()
       cy.url().should('eq', 'http://localhost:3000/');
     })
   
     it('Home when clicked redirects me to the same page', () => {
-      cy.contains('.nav-item', 'Home')
-      .should('be.visible')
-      .click()
-      cy.url()
-      .should('eq', 'http://localhost:3000/');
+      cy.contains('.nav-item', 'Home').should('be.visible').click()
+      cy.url().should('eq', 'http://localhost:3000/');
     })
   
     it('Gallery when clicked takes me to the page where all the cat pictures are displayed', () => {
-      cy.contains('.nav-item', 'Gallery')
-      .should('be.visible')
-      .click()
-      cy.url()
-      .should('eq', 'http://localhost:3000/gallery');
+      cy.contains('.nav-item', 'Gallery').should('be.visible').click()
+      cy.url().should('eq', 'http://localhost:3000/gallery');
     })
 
     it('Information when clicked takes me to a page where cat information is available', () => {
-      cy.contains('.nav-item', 'Information')
-      .should('be.visible')
-      .click()
-      cy.url()
-      .should('eq', 'http://localhost:3000/cats');
+      cy.contains('.nav-item', 'Information').should('be.visible').click()
+      cy.url().should('eq', 'http://localhost:3000/cats');
     })
   
     it('Contact when clicked takes me to the conatct us form page', () => {
-      cy.contains('.nav-item', 'Contact')
-      .should('be.visible')
-      .click()
-      cy.url()
-      .should('eq', 'http://localhost:3000/contact');
+      cy.contains('.nav-item', 'Contact').should('be.visible').click()
+      cy.url().should('eq', 'http://localhost:3000/contact');
     })
   
     it('Search bar is visible', () => {
@@ -77,6 +62,8 @@ describe('Cat-Lovers Project', () => {
       cy.get('.navbar-search-form .btn').should('be.visible').should('have.css', 'background-color', 'rgb(0, 123, 255)')
     })
   
+    // We can test for the text visibility and its correctness in a single test as well. If text is visible, then check for its correctness at the same time.
+    // However, to make things easy, we have made separate tests for these two features
     context(('Body Text'), () => {
       it('The text is visible in the body', () => {
         cy.get('main').should('be.visible')
@@ -110,11 +97,13 @@ describe('Cat-Lovers Project', () => {
         cy.get('main .container-text-on-cats p').should('be.visible')
       })
   
+      // Cypress checks for empty line spaces, whie spaces as well. In order to check for the text we need to trim the extra white spaces and line spaces to make it more 
+      // authentic and run our test seamlessly
       it('The body text should be correct', () => {
   
         const expectedTextNormalized = `Cats, these mysterious and graceful creatures, have long captured our hearts with their enigmatic charm and playful antics. They epitomize the essence of independence and curiosity, making them beloved companions for millions around the world. These words resonate deeply, for cats have a unique way of forging deep connections with those who appreciate their companionship. Whether they're gracefully prowling through the garden or curling up for a cozy nap, cats add a special warmth to our homes and hearts. Discover the world of feline wonder on our website and let these enchanting beings brighten your day.`;
   
-        const normalizeText = (text) => text.replace(/\s+/g, ' ').trim();
+        const normalizeText = (text) => text.replace(/\s+/g, ' ').trim();   // trim any white spaces or line spaces
   
         cy.get('.container-text-on-cats')
         .invoke('text')
@@ -167,6 +156,7 @@ describe('Cat-Lovers Project', () => {
         cy.get('main .form-container h1').should('have.text', 'Contact Us')
       })
 
+      // to check for any textfields wrapped in the tag label, this is how we test them in cypress
       it('Name heading is visible', () => {
         cy.get('label[for="name"]').should('be.visible')
       })
@@ -175,9 +165,10 @@ describe('Cat-Lovers Project', () => {
         cy.get('label[for="name"]').should('have.text', 'Name')
       })
 
+      // for class, we use the syntax '.class-name', for id, we use the syntax '#id-name'
       it('Name text field is visible', () => {
-        cy.get('.form-group #name').should('be.visible')
-      })
+        cy.get('.form-group #name').should('be.visible')    // .form-group is class and #name is an id in the class .form-group
+      })  // first it looks for .form-group class and then an id #name in the class .form-group
 
       it('Name text field takes input', () => {
         const inputText = 'Hammad Rashid'
@@ -257,6 +248,7 @@ describe('Cat-Lovers Project', () => {
       cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
     })
 
+    // the tags are tested without any preceding character, such as h1, h2, h4, div, main, header etc
     it('Gallery word is visible', () => {
       cy.get('main h1').should('be.visible')
     })
@@ -270,7 +262,6 @@ describe('Cat-Lovers Project', () => {
     })
 
     it('Count images on the screen', () => {
-      // cy.wait(2000)   // load  the page completely
       cy.get('.container .card').should('have.length', 21).each(($img) => {
         cy.wrap($img).should('be.visible')
       });
@@ -278,7 +269,7 @@ describe('Cat-Lovers Project', () => {
 
     it('Count the image rows on the screen', () => {
       cy.get('.container .row') 
-      .should('have.length', 7) 
+      .should('have.length', 7)   // checks for the number of rows in the container
       .each(($img) => {
         cy.wrap($img).should('be.visible'); 
       });
@@ -323,6 +314,8 @@ describe('Cat-Lovers Project', () => {
 
     context('Cards', () => {
       it('Persian Cats', () => {
+        // .first takes the first element in a set matched
+        // .within checks for that element selected in the set present
         cy.get('.row .col-md-4.mb-4').first().within(() => {
           cy.get('img').should('be.visible')
           cy.get('.card-title').should('contain', 'Persian Cats');
@@ -363,7 +356,7 @@ describe('Cat-Lovers Project', () => {
       })
 
       it('British Long Hair', () => {
-        cy.get('.row .col-md-4.mb-4').eq(5).within(() => {
+        cy.get('.row .col-md-4.mb-4').last().within(() => { // can replace last() with eq(5)
           cy.get('img').should('be.visible')
           cy.get('.card-title').should('contain', 'British Long Hair');
           cy.get('.btn-primary').click();
@@ -432,3 +425,5 @@ describe('Cat-Lovers Project', () => {
   })
  
 })
+
+// There are 74 tests for this website. However, these can be reduced or increased according to the requirements and need of the hour. 
