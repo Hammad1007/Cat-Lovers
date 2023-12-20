@@ -1,4 +1,4 @@
-# Software Testing
+# 🖥️ Software Testing
 
 Software testing is an essential process that ensures the quality, functionality, and reliability of software applications. It involves a systematic evaluation of software components, aiming to identify defects, errors, or deviations from expected behavior to deliver a high-quality end product.
 
@@ -18,12 +18,14 @@ Cypress has everything a Software Tester wishes for: An impressive GUI, ease of 
 
 #### Setup and important commands
 
-Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. After you have successfully cloned a git repository with yourself run the following command.
+Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository.
+
+After you have successfully cloned a git repository with yourself run the following command.
 ```
 npm install
 ```
-
 This command is used for all the node related projects. Running this command successfully installs all the node modules and packages inside the project. After this command, run the following command to run your application on your localhost.
+
 ```
 npm start
 ```
@@ -40,13 +42,13 @@ After this command, you need to start the cypress tool. This will open the cypre
 npx cypress open
 ```
 
-Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder cypress which has been installed freshly after running the above commands. In your folder, go to the subfolder e2e and inside this folder, create a new 'cy.js' file to start writing your E2E tests for your website. You can refer to the file which I have created for any issues.
+Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been installed freshly after running the above commands. In your folder, go to the subfolder e2e and inside this folder, create a new 'cy.js' file to start writing your E2E tests for your website. You can refer to the file which I have created for any issues.
 
 #### Important keywords in Cypress
 
 There are a variety of commands and keywords which are used in cypress. You can have a look at them here: [Cypress Commands](https://docs.cypress.io/api/table-of-contents)
 
-However, I will be mentioning a few basic and most commonly used commands and keywords in cypress for you all to get started.
+However, these are a few basic and most commonly used commands and keywords in cypress for you all to get started.
 
 **Cypress Keywords**
 
