@@ -1,6 +1,10 @@
-# Testing
+# Software Testing
 
-Like any javascript web application, we will be testing it using Cypress Tool for E2E Testing. A complete guide on how to use cypress is mentioned in this file.
+Software testing is an essential process that ensures the quality, functionality, and reliability of software applications. It involves a systematic evaluation of software components, aiming to identify defects, errors, or deviations from expected behavior to deliver a high-quality end product.
+
+Website testing specifically focuses on assessing web applications, ensuring they function accurately across different browsers, devices, and user scenarios. It encompasses various testing types, including functionality, usability, performance, security, and compatibility checks, to guarantee a seamless and satisfying user experience.
+
+For the website, Cat-Lovers, we will be using Cypress for E2E Testing. A bried guide to cypress is mentioned in the following paragraphs.
 
 ## Cypress
 ### What is Cypress?
