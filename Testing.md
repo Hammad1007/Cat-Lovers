@@ -66,3 +66,6 @@ However, I will be mentioning a few basic and most commonly used commands and ke
 * cy.wrap(): wrap an element or value to perform further Cypress commands or assertions
 * cy.type(): takes in a typed tex in a text field
 * cy.url(): checks for a url which has been passed in the parameter if its correct or not
+* cy.first(): used to select the first element from a set of matched elements
+* cy.within(): sets the context of subsequent commands to operate within a specific DOM element or a collection of elements
+* cy.eq(): used to select a specific element from a set of matched elements based on its index
