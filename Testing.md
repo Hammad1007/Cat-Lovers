@@ -4,7 +4,7 @@ Software testing is an essential process that ensures the quality, functionality
 
 Website testing specifically focuses on assessing web applications, ensuring they function accurately across different browsers, devices, and user scenarios. It encompasses various testing types, including functionality, usability, performance, security, and compatibility checks, to guarantee a seamless and satisfying user experience.
 
-For the website, Cat-Lovers, we will be using Cypress for E2E Testing. A bried guide to cypress is mentioned in the following paragraphs.
+For the website, Cat-Lovers, we will be using Cypress for E2E Testing. A brief guide to cypress is mentioned in the following paragraphs.
 
 ## Cypress
 ### What is Cypress?
