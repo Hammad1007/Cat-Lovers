@@ -58,6 +58,7 @@ However, these are a few basic and most commonly used commands and keywords in c
     2. beforeAll(): runs once before all the tests in the entire test suite
 * it(): defines an individual test case or a specification
 * context(): group and organize test commands within a specific context or scope
+* and(): asserts some assertion in this block which should be held true so as to give the desired correct output
 
 **Cypress Commands**
 
