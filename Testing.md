@@ -76,3 +76,5 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.first(): used to select the first element from a set of matched elements
 * cy.within(): sets the context of subsequent commands to operate within a specific DOM element or a collection of elements
 * cy.eq(): used to select a specific element from a set of matched elements based on its index
+* cy.invoke(): used to invoke a method on the selected DOM element
+* cy.trigger(): used to trigger an event on the selected DOM element 
