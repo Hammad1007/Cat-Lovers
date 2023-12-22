@@ -14,7 +14,7 @@ there are multiple unit testing tools available in each language such as Junit f
 
 #### Why is Cypress used in the industry?
 
-Cypress has everything a Software Tester wishes for: An impressive GUI, ease of use, high performance speed and a well known community. Some other benefits include faster setup, faster to test, easier to debug and not language dependent. Cypress can be used for any web application which is being built on javascript or any of the javascript frameworks or libraries. 
+Cypress has everything a Software Tester wishes for: An impressive GUI, ease of use, high performance speed and a well known community, faster setup, faster to test, easier to debug and not language dependent. Cypress can be used for any web application which is being built on javascript or any of the javascript frameworks or libraries. 
 
 #### Setup and important commands
 
