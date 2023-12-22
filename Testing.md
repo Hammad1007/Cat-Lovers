@@ -45,7 +45,7 @@ After this command, you need to start the cypress tool. This will open the cypre
 npx cypress open
 ```
 
-Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been installed freshly after running the above commands. In your folder, go to the subfolder e2e and inside this folder, create a new 'cy.js' file to start writing your E2E tests for your website. You can refer to the file which I have created for any issues.
+Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been freshly installed. In your folder, go to the subfolder e2e and inside this folder, create a new 'test1.speccy.js' file to start writing your E2E tests for your website.`
 
 #### Important keywords in Cypress
 
