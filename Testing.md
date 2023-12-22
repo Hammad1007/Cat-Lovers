@@ -18,7 +18,10 @@ Cypress has everything a Software Tester wishes for: An impressive GUI, ease of 
 
 #### Setup and important commands
 
-Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository.
+Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository. However, if you wish to use the terminal. you may enter the following command:
+```
+git clone [URL of the Remote Git repository]
+```
 
 After you have successfully cloned a git repository with yourself run the following command.
 ```
