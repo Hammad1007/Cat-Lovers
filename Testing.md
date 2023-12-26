@@ -40,10 +40,12 @@ npm install cypress --save-dev
 
 This command will install all the cypress related modules and dependencies in the project. 
 
-After this command, you need to start the cypress tool. This will open the cypress GUI for you. Once the GUI is opened, you will follow the instrucions on your browser and choose the options which best suit you. The command to start cypress is:
+After this command, you need to start the cypress tool. The command to start cypress is:
 ```
 npx cypress open
 ```
+
+This will open the cypress GUI for you. Once the GUI is opened, you will follow the instrucions on your browser and choose the options which best suit you.
 
 Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been freshly installed. In your folder, go to the subfolder e2e and inside this folder, create a new 'test1.speccy.js' file to start writing your E2E tests for your website.`
 
