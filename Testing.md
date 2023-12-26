@@ -40,10 +40,12 @@ npm install cypress --save-dev
 
 This command will install all the cypress related modules and dependencies in the project. 
 
-After this command, you need to start the cypress tool. This will open the cypress GUI for you. Once the GUI is opened, you will follow the instrucions on your browser and choose the options which best suit you. The command to start cypress is:
+After this command, you need to start the cypress tool. The command to start cypress is:
 ```
 npx cypress open
 ```
+
+This will open the cypress GUI for you. Once the GUI is opened, you will follow the instrucions on your browser and choose the options which best suit you.
 
 Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been freshly installed. In your folder, go to the subfolder e2e and inside this folder, create a new 'test1.speccy.js' file to start writing your E2E tests for your website.`
 
@@ -74,10 +76,10 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.wait(): Pauses the test to wait for a specific condition or duration.
 * cy.each(): iterate over a set of elements returned by a command, allowing you to perform actions or assertions on each element individually
 * cy.wrap(): wrap an element or value to perform further Cypress commands or assertions
-* cy.type(): takes in a typed tex in a text field
+* cy.type(): takes in a typed text in a text field
 * cy.url(): checks for a url which has been passed in the parameter if its correct or not
 * cy.first(): used to select the first element from a set of matched elements
-* cy.last(): used to select the last element froma  set of matched elememts
+* cy.last(): used to select the last element from a set of matched elememts
 * cy.within(): sets the context of subsequent commands to operate within a specific DOM element or a collection of elements
 * cy.eq(): used to select a specific element from a set of matched elements based on its index
 * cy.invoke(): used to invoke a method on the selected DOM element
