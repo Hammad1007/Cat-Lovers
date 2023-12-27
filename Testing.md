@@ -86,4 +86,4 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.trigger(): used to trigger an event on the selected DOM element
 
 ### Common Mistakes
-No doubt, cypress is an extremely easy and helpful tool to use, but there were a few things which took me some time to get used to with. Cypress is easy yet it requires a lot of careful analysis and correct syntax to output the desired results.
+No doubt, cypress is an extremely easy and helpful tool to use, but there were a few things which took me some time to get used to with. Cypress is easy yet it requires a lot of careful analysis and correct syntax to output the desired results. If you have missed a single space or a line, the test will not run and will give an error till you resolve that particular issue. 
