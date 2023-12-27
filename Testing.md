@@ -49,13 +49,13 @@ This will open the cypress GUI for you. Once the GUI is opened, you will follow 
 
 Great, now we are ready to begin with our E2E Testing. Navigate to your IDE and open the folder 'cypress' which has been freshly installed. In your folder, go to the subfolder e2e and inside this folder, create a new 'test1.speccy.js' file to start writing your E2E tests for your website.`
 
-#### Important keywords in Cypress
+### Important keywords in Cypress
 
 There are a variety of commands and keywords which are used in cypress. You can have a look at them here: [Cypress Commands](https://docs.cypress.io/api/table-of-contents)
 
 However, these are a few basic and most commonly used commands and keywords in cypress for you all to get started.
 
-**Cypress Keywords**
+#### Cypress Keywords
 
 * describe(): define a test suite or a group of tests
 * before(): runs once before all the tests in a test file
@@ -65,7 +65,7 @@ However, these are a few basic and most commonly used commands and keywords in c
 * context(): group and organize test commands within a specific context or scope
 * and(): asserts some assertion in this block which should be held true so as to give the desired correct output
 
-**Cypress Commands**
+#### Cypress Commands
 
 * cy.visit(): Navigate to a specific URL.
 * cy.get(): Retrieves DOM elements using selectors like IDs, classes, etc.
@@ -83,4 +83,7 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.within(): sets the context of subsequent commands to operate within a specific DOM element or a collection of elements
 * cy.eq(): used to select a specific element from a set of matched elements based on its index
 * cy.invoke(): used to invoke a method on the selected DOM element
-* cy.trigger(): used to trigger an event on the selected DOM element 
+* cy.trigger(): used to trigger an event on the selected DOM element
+
+### Common Mistakes
+No doubt, cypress is an extremely easy and helpful tool to use, but there were a few things which took me some time to get used to with. Cypress is easy yet it requires a lot of careful analysis and correct syntax to output the desired results.
