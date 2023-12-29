@@ -85,7 +85,7 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.invoke(): used to invoke a method on the selected DOM element
 * cy.trigger(): used to trigger an event on the selected DOM element
 
-### Tips and Tricks to Write better Automated Scripts
+### Tips and Tricks
 Here are a few tricks and tips for you all if you wish to use cypress for E2E automated tetsing. Before learning this tips and tricks it might take you a few days to get used to the commands, to learn the basic keywords and commands. However, the key to being a master at anything is to be persistent and consistent. 
 
 * **Start with the Basic Functionality**
