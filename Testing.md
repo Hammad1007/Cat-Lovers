@@ -85,9 +85,32 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.invoke(): used to invoke a method on the selected DOM element
 * cy.trigger(): used to trigger an event on the selected DOM element
 
-### Tips and Tricks to Write better Automated Scripts
+### Tips and Tricks
 Here are a few tricks and tips for you all if you wish to use cypress for E2E automated tetsing. Before learning this tips and tricks it might take you a few days to get used to the commands, to learn the basic keywords and commands. However, the key to being a master at anything is to be persistent and consistent. 
 
+* **Start with the Basic Functionality**
+  
+  Always start writing with the basic functionas of the applications. They can be viewing the screen, checking the background color, viewing the title text, buttons and other icons. Move to the more complex functions after you are donw ith the basic ones.
+  
+* **Perform a Manual QA**
+  
+  Before you begin with the automation scripts, you need to perform a rough manual QA for your website in order to grasp an idea of what will be the stuff you will be dealing with.
+
+* **Break down Bigger Functionalities**
+  
+  At times, there are several features which have multiple sub features present in them. Break the larger components ino smaller, more vulnerable and easier to digest compoenents which can be tested using simpler, easy and agile scripts. This will help you make your code more efficient and easy to understand.
+  
+* **Start Writing Scripts from the Top**
+  
+  When writing the test scripts, always start from the top of the page.
+  
+* **Keep your scripts aligned**
+  
+  Try using keywords like it and context to define multiple blocks and place your code in them in an orderly manner which not only makes it easy for you to understand but also helps you revise it at some point later too.
+
+* **Apply the Code Resuability Formula**
+
+  Just like in programming, if there are multiple tests which require a common code block, instead of replicating the code in every test individually, write that particular code in a function and reuse it wherever you want to.
 
 ### Sample Cypress Testing Code
 Here is a basic E2E Testing code using cypress for a Project Password Generator. The project can be found here: [Password Generator](https://github.com/bradtraversy/50projects50days/tree/master/password-generator)
