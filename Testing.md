@@ -94,7 +94,7 @@ Here are a few tricks and tips for you all if you wish to use cypress for E2E au
   
 * **Perform a Manual QA**
   
-  Before you begin with the automation scripts, you need to perform a rough manual QA for your webiste in order to grasp an idea of what will be the stuff you will be dealing with.
+  Before you begin with the automation scripts, you need to perform a rough manual QA for your website in order to grasp an idea of what will be the stuff you will be dealing with.
 
 * **Break down Bigger Functionalities**
   
