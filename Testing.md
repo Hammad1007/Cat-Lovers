@@ -85,13 +85,14 @@ However, these are a few basic and most commonly used commands and keywords in c
 * cy.invoke(): used to invoke a method on the selected DOM element
 * cy.trigger(): used to trigger an event on the selected DOM element
 
-### Tips and Tricks to Improve Yourself
+### Tips and Tricks to Write better Automated Scripts
+Here are a few tricks and tips for you all if you wish to use cypress for E2E automated tetsing. Before learning this tips and tricks it might take you a few days to get used to the commands, to learn the basic keywords and commands. However, the key to being a master at anything is to be persistent and consistent. 
 
 
 ### Sample Cypress Testing Code
 Here is a basic E2E Testing code using cypress for a Project Password Generator. The project can be found here: [Password Generator](https://github.com/bradtraversy/50projects50days/tree/master/password-generator)
 
-The project has been tested thoroughly usng Cypress commands and keywords. If you have any suggestions, feel free to mention them in the discussions forum.
+The project has been tested thoroughly using Cypress commands and keywords. If you have any suggestions, feel free to mention them in the discussions forum.
 
 ```
 describe('Project: Password Generator', () => {
