@@ -16,6 +16,9 @@ there are multiple unit testing tools available in each language such as Junit f
 
 Cypress has everything a Software Tester wishes for: An impressive GUI, ease of use, high performance speed and a well known community, faster setup, faster to test, easier to debug and not language dependent. Cypress can be used for any web application which is built on javascript or any of the javascript frameworks or libraries. 
 
+#### Comparison with Cypress
+
+
 #### Setup and important commands
 
 Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository. However, if you wish to use the terminal. you may enter the following command:
