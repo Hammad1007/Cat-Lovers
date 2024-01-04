@@ -16,7 +16,7 @@ there are multiple unit testing tools available in each language such as Junit f
 
 Cypress has everything a Software Tester wishes for: An impressive GUI, ease of use, high performance speed and a well known community, faster setup, faster to test, easier to debug and not language dependent. Cypress can be used for any web application which is built on javascript or any of the javascript frameworks or libraries. 
 
-#### Comparison with Cypress
+#### Comparison with Selenium
 
 
 #### Setup and important commands
