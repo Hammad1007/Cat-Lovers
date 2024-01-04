@@ -12,14 +12,23 @@ For the website, Cat-Lovers, we will be using Cypress for E2E Testing. A brief g
 An open source, front-end testing tool which is useful for unit tests, integration tests, component tests and e2e tests. Since unit tests are the responsibility of the developer, and 
 there are multiple unit testing tools available in each language such as Junit for Java, Pytest for Python, we use cypress mainly for E2E Tests.
 
-#### Why is Cypress used in the industry?
+### Why is Cypress used in the industry?
 
 Cypress has everything a Software Tester wishes for: An impressive GUI, ease of use, high performance speed and a well known community, faster setup, faster to test, easier to debug and not language dependent. Cypress can be used for any web application which is built on javascript or any of the javascript frameworks or libraries. 
 
-#### Comparison with Selenium
+### Comparison with Selenium
+**Feature** |**Selenium** | **Cypress**
+--------|----------|--------
+Language | Supports multiple languages (Java, Python, JavaScript) | Primarily uses JavaScript
+API | Complex API, requires understanding of Selenium commands and waits | Simplified API with built-in commands, eliminates the need for explicit waits
+Execution Speed | Relatively slower due to network communication between the test and browser | Faster execution as tests run directly in the browser
+Browser Support | Supports multiple browsers | Primarily focused on Chromium-based browsers (Chrome, Electron, Edge, Firefox)
+Debugging | Challenging debugging process, difficult to pinpoint failures | Easy debugging with time-traveling capabilities, provides detailed information on failures
+Parallel Execution | Possible but requires external configurations for parallel testing | Built-in support for parallel execution
+Community Support | Large community and extensive resources available | Growing community with active development and support
+Popularity | Long-established tool, widely used in the industry | Increasing popularity due to modern architecture and ease of use
 
-
-#### Setup and important commands
+### Setup and important commands
 
 Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository. However, if you wish to use the terminal. you may enter the following command:
 ```
@@ -58,7 +67,7 @@ There are a variety of commands and keywords which are used in cypress. You can 
 
 However, these are a few basic and most commonly used commands and keywords in cypress for you all to get started.
 
-#### Cypress Keywords
+#### Keywords
 
 * describe(): define a test suite or a group of tests
 * before(): runs once before all the tests in a test file
@@ -68,7 +77,7 @@ However, these are a few basic and most commonly used commands and keywords in c
 * context(): group and organize test commands within a specific context or scope
 * and(): asserts some assertion in this block which should be held true so as to give the desired correct output
 
-#### Cypress Commands
+#### Commands
 
 * cy.visit(): Navigate to a specific URL.
 * cy.get(): Retrieves DOM elements using selectors like IDs, classes, etc.
