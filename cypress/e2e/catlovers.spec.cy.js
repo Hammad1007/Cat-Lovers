@@ -97,8 +97,7 @@ describe('Cat-Lovers Project', () => {
         cy.get('main .container-text-on-cats p').should('be.visible')
       })
   
-      // Cypress checks for empty line spaces, whie spaces as well. In order to check for the text we need to trim the extra white spaces and line spaces to make it more 
-      // authentic and run our test seamlessly
+      // Cypress checks for empty line spaces, white spaces as well. In order to check for the text we need to trim the extra white spaces and line spaces to make it more authentic and run our test seamlessly
       it('The body text should be correct', () => {
   
         const expectedTextNormalized = `Cats, these mysterious and graceful creatures, have long captured our hearts with their enigmatic charm and playful antics. They epitomize the essence of independence and curiosity, making them beloved companions for millions around the world. These words resonate deeply, for cats have a unique way of forging deep connections with those who appreciate their companionship. Whether they're gracefully prowling through the garden or curling up for a cozy nap, cats add a special warmth to our homes and hearts. Discover the world of feline wonder on our website and let these enchanting beings brighten your day.`;
@@ -148,15 +147,15 @@ describe('Cat-Lovers Project', () => {
         cy.get('main .form-container').should('be.visible')
       })
 
-      it('Contact Us Text is Visible', () => {
+      it('Contact Us Text is visible', () => {
         cy.get('main .form-container h1').should('be.visible')
       })
 
-      it('Contact Us Text is Correct', () => {
+      it('Contact Us Text is correct', () => {
         cy.get('main .form-container h1').should('have.text', 'Contact Us')
       })
 
-      // to check for any textfields wrapped in the tag label, this is how we test them in cypress
+      // To check for any textfields wrapped in the tag label, this is how we test them in cypress
       it('Name heading is visible', () => {
         cy.get('label[for="name"]').should('be.visible')
       })
@@ -167,7 +166,7 @@ describe('Cat-Lovers Project', () => {
 
       // for class, we use the syntax '.class-name', for id, we use the syntax '#id-name'
       it('Name text field is visible', () => {
-        cy.get('.form-group #name').should('be.visible')    // .form-group is class and #name is an id in the class .form-group
+        cy.get('.form-group #name').should('be.visible')    
       })  // first it looks for .form-group class and then an id #name in the class .form-group
 
       it('Name text field takes input', () => {
@@ -248,7 +247,7 @@ describe('Cat-Lovers Project', () => {
       cy.get('body').should('have.css', 'background-color', 'rgb(255, 255, 255)')
     })
 
-    // the tags are tested without any preceding character, such as h1, h2, h4, div, main, header etc
+    // The tags are tested without any preceding character, such as h1, h2, h4, div, main, header, label, type, input etc
     it('Gallery word is visible', () => {
       cy.get('main h1').should('be.visible')
     })
@@ -268,7 +267,7 @@ describe('Cat-Lovers Project', () => {
     })
 
     it('Count the image rows on the screen', () => {
-      cy.get('.container .row') 
+      cy.get('.container .row')   // We get the rows in the container and check if the lenght of the rows is 7
       .should('have.length', 7)   // checks for the number of rows in the container
       .each(($img) => {
         cy.wrap($img).should('be.visible'); 
@@ -356,7 +355,8 @@ describe('Cat-Lovers Project', () => {
       })
 
       it('British Long Hair', () => {
-        cy.get('.row .col-md-4.mb-4').last().within(() => { // can replace last() with eq(5)
+        // can replace last() with eq(5)
+        cy.get('.row .col-md-4.mb-4').last().within(() => { 
           cy.get('img').should('be.visible')
           cy.get('.card-title').should('contain', 'British Long Hair');
           cy.get('.btn-primary').click();
@@ -419,11 +419,8 @@ describe('Cat-Lovers Project', () => {
         cy.get('.dropdown-menu').contains('.dropdown-item', 'British Long Hair').should('be.visible').click()
         cy.url().should('eq', 'http://localhost:3000/britishlong')
       })
-
     })
-
   })
- 
 })
 
 // There are 74 tests for this website. However, these can be reduced or increased according to the requirements and need of the hour. 
