@@ -30,7 +30,7 @@ Popularity | Long-established tool, widely used in the industry | Increasing pop
 
 ### Setup and important commands
 
-Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository. However, if you wish to use the terminal. you may enter the following command:
+Start by cloning a github repository with yourself on your Visual Studio Code. Visual Studio Code is faster and quick to use than other IDEs. It is better to stick with the GUI of the IDE to clone a repository. Go to your desired directory where you wish to keep your project.
 ```
 git clone [URL of the Remote Git repository]
 ```
